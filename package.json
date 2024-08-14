@@ -7,6 +7,7 @@
   "main": "dist/index.min.js",
   "module": "dist/index.min.mjs",
   "types": "dist/index.d.ts",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git@github.com:InkSha/file-header-comment.git"
@@ -90,6 +91,8 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "husky": "^9.1.4"
+    "@types/shelljs": "^0.8.15",
+    "husky": "^9.1.4",
+    "shelljs": "^0.8.5"
   }
 }
