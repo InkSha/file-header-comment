@@ -65,7 +65,13 @@ export const getCommitFiles = () => {
       break
     }
 
-    files.push(item.split('|')[0].trim())
+    let file = item.split('|')[0].trim()
+
+    if (file.match(' => ')) {
+      file = file.split(' => ')[1].trim()
+    }
+
+    files.push(file)
     count++
   }
 

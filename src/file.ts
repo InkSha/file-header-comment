@@ -8,7 +8,7 @@ export const writeHeadComment = (file: string, comment: string) => {
     .replaceAll('\r', '\n')
     .split('\n')
   const head = comment.split('\n').filter(Boolean)
-  console.log({ raw, head })
+
   if (raw[0] === head[0]) {
     let tail = ''
     do {
